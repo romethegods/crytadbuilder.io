@@ -1,0 +1,288 @@
+/* Base styles */
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #50E3C2;
+    --accent-color: #F5A623;
+    --text-color: #333333;
+    --background-color: #F9F9F9;
+    --white: #FFFFFF;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  /* Header */
+header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+  }
+  /* Navigation */
+nav {
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+  
+  nav a:hover {
+    color: var(--secondary-color);
+  }
+  /* Main content */
+main {
+    padding: 2rem 0;
+  }
+  
+  main h2 {
+    color: var(--primary-color);
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #E09000;
+  }
+  /* Footer */
+footer {
+    background-color: var(--text-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  /* Contact page styles */
+.contact-info, .contact-form {
+    margin-bottom: 2rem;
+}
+
+.contact-form form {
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.contact-form .cta-button {
+    border: none;
+    cursor: pointer;
+}
+/* Features page styles */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.feature-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.cta-section {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    color: var(--white);
+}
+
+.cta-section h3 {
+    margin-top: 0;
+}
+
+.cta-section .cta-button {
+    margin-top: 1rem;
+}
+
+.ad-container {
+    margin-top: 3rem;
+    text-align: center;
+}
+/* Pricing page styles */
+.pricing-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.pricing-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+}
+
+.pricing-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.pricing-card .price span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.pricing-card li {
+    margin-bottom: 0.5rem;
+}
+
+.pricing-card .cta-button {
+    display: block;
+    width: 100%;
+}
+
+/* Templates page styles */
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.template-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.template-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.template-card h3 {
+    color: var(--primary-color);
+    margin: 1rem;
+}
+
+.template-card p {
+    margin: 0 1rem 1rem;
+}
+
+.template-card .cta-button {
+    display: block;
+    margin: 1rem;
+}
+
+.ad-container {
+    margin-top: 3rem;
+    text-align: center;
+}
